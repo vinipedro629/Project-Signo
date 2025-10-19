@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Descubra seu Signo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background: linear-gradient(135deg, #a2c2e0, #f1f1f1); }
+    .card { border-radius: 20px; max-width: 500px; margin: 50px auto; }
+  </style>
+</head>
+<body class="bg-light">
+  <div class="container">
+    <div class="card p-4 shadow">
+      <h3 class="text-center mb-4">Descubra o seu signo!</h3>
+      <input type="date" id="dataNascimento" class="form-control mb-3">
+      <button onclick="consultarSigno()" class="btn btn-primary w-100">Consultar</button>
+      <div id="resultado" class="mt-4 text-center"></div>
+    </div>
+  </div>
+
+  <script>
+    async function consultarSigno() {
+      const resposta = await fetch("signos.xml");
+      if (!resposta.ok) {
+        document.getElementById("resultado").innerHTML = "<p>Erro ao carregar signos.xml</p>";
+        return;
+      }
+      const xml = await resposta.text();
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(xml, "application/xml");
+
+      const dataNasc = document.getElementById("dataNascimento").value;
+      if (!dataNasc) return alert("Selecione uma data!");
+
+      const data = new Date(dataNasc);
+      const dia = data.getDate();
+      const mes = data.getMonth() + 1;
+
+      let signoEncontrado = null;
+      const signos = xmlDoc.getElementsByTagName("signo");
+
+      for (let i = 0; i < signos.length; i++) {
+        const inicio = signos[i].getElementsByTagName("dataInicio")[0].textContent.split("/");
+        const fim = signos[i].getElementsByTagName("dataFim")[0].textContent.split("/");
+        const di = parseInt(inicio[0]), mi = parseInt(inicio[1]);
+        const df = parseInt(fim[0]), mf = parseInt(fim[1]);
+
+        if ((mes === mi && dia >= di) || (mes === mf && dia <= df) ||
+            (mi > mf && (mes === mi || mes === mf))) {
+          signoEncontrado = signos[i];
+          break;
+        }
+      }
+
+      if (signoEncontrado) {
+        const nome = signoEncontrado.getElementsByTagName("signoNome")[0].textContent;
+        const desc = signoEncontrado.getElementsByTagName("descricao")[0].textContent;
+        document.getElementById("resultado").innerHTML =
+          `<h4>Seu signo é <strong>${nome}</strong></h4><p>${desc}</p>`;
+      } else {
+        document.getElementById("resultado").innerHTML =
+          `<p>Não foi possível determinar o signo.</p>`;
+      }
+    }
+  </script>
+</body>
+</html>

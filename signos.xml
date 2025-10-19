@@ -1,87 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <signos>
-    <signo>
-        <dataInicio>21/03</dataInicio>
-        <dataFim>20/04</dataFim>
-        <signoNome>Áries</signoNome>
-        <descricao>Pessoas de Áries são corajosas, determinadas e impulsivas.</descricao>
-        <imagem>aries.png</imagem>
-    </signo>
-    <signo>
-        <dataInicio>21/04</dataInicio>
-        <dataFim>20/05</dataFim>
-        <signoNome>Touro</signoNome>
-        <descricao>Práticos, determinados e amantes do conforto.</descricao>
-        <imagem>touro.png</imagem>
-    </signo>
-    <signo>
-        <dataInicio>21/05</dataInicio>
-        <dataFim>20/06</dataFim>
-        <signoNome>Gêmeos</signoNome>
-        <descricao>Comunicativos, curiosos e versáteis.</descricao>
-        <imagem>gemeos.png</imagem>
-    </signo>
-    <signo>
-        <dataInicio>21/06</dataInicio>
-        <dataFim>22/07</dataFim>
-        <signoNome>Câncer</signoNome>
-        <descricao>Emotivos, sensíveis e protetores.</descricao>
-        <imagem>cancer.png</imagem>
-    </signo>
-    <signo>
-        <dataInicio>23/07</dataInicio>
-        <dataFim>22/08</dataFim>
-        <signoNome>Leão</signoNome>
-        <descricao>Orgulhosos, criativos e carismáticos.</descricao>
-        <imagem>leao.png</imagem>
-    </signo>
-    <signo>
-        <dataInicio>23/08</dataInicio>
-        <dataFim>22/09</dataFim>
-        <signoNome>Virgem</signoNome>
-        <descricao>Detalhistas, práticos e analíticos.</descricao>
-        <imagem>virgem.png</imagem>
-    </signo>
-    <signo>
-        <dataInicio>23/09</dataInicio>
-        <dataFim>22/10</dataFim>
-        <signoNome>Libra</signoNome>
-        <descricao>Equilibrados, sociáveis e justos.</descricao>
-        <imagem>libra.png</imagem>
-    </signo>
-    <signo>
-        <dataInicio>23/10</dataInicio>
-        <dataFim>21/11</dataFim>
-        <signoNome>Escorpião</signoNome>
-        <descricao>Intensos, determinados e misteriosos.</descricao>
-        <imagem>escorpiao.png</imagem>
-    </signo>
-    <signo>
-        <dataInicio>22/11</dataInicio>
-        <dataFim>21/12</dataFim>
-        <signoNome>Sagitário</signoNome>
-        <descricao>Aventureiros, otimistas e francos.</descricao>
-        <imagem>sagitario.png</imagem>
-    </signo>
-    <signo>
-        <dataInicio>22/12</dataInicio>
-        <dataFim>19/01</dataFim>
-        <signoNome>Capricórnio</signoNome>
-        <descricao>Disciplinados, responsáveis e ambiciosos.</descricao>
-        <imagem>capricornio.png</imagem>
-    </signo>
-    <signo>
-        <dataInicio>20/01</dataInicio>
-        <dataFim>18/02</dataFim>
-        <signoNome>Aquário</signoNome>
-        <descricao>Originais, independentes e idealistas.</descricao>
-        <imagem>aquario.png</imagem>
-    </signo>
-    <signo>
-        <dataInicio>19/02</dataInicio>
-        <dataFim>20/03</dataFim>
-        <signoNome>Peixes</signoNome>
-        <descricao>Sonhadores, sensíveis e compassivos.</descricao>
-        <imagem>peixes.png</imagem>
-    </signo>
+  <signo><dataInicio>21/03</dataInicio><dataFim>20/04</dataFim><signoNome>Áries</signoNome><descricao>Corajoso, determinado e impulsivo.</descricao><imagem>aries.png</imagem></signo>
+  <signo><dataInicio>21/04</dataInicio><dataFim>20/05</dataFim><signoNome>Touro</signoNome><descricao>Prático, leal e paciente.</descricao><imagem>touro.png</imagem></signo>
+  <signo><dataInicio>21/05</dataInicio><dataFim>20/06</dataFim><signoNome>Gêmeos</signoNome><descricao>Comunicativo, curioso e versátil.</descricao><imagem>gemeos.png</imagem></signo>
+  <signo><dataInicio>21/06</dataInicio><dataFim>22/07</dataFim><signoNome>Câncer</signoNome><descricao>Emotivo, sensível e protetor.</descricao><imagem>cancer.png</imagem></signo>
+  <signo><dataInicio>23/07</dataInicio><dataFim>22/08</dataFim><signoNome>Leão</signoNome><descricao>Orgulhoso, criativo e carismático.</descricao><imagem>leao.png</imagem></signo>
+  <signo><dataInicio>23/08</dataInicio><dataFim>22/09</dataFim><signoNome>Virgem</signoNome><descricao>Detalhista, prático e analítico.</descricao><imagem>virgem.png</imagem></signo>
+  <signo><dataInicio>23/09</dataInicio><dataFim>22/10</dataFim><signoNome>Libra</signoNome><descricao>Equilibrado, sociável e justo.</descricao><imagem>libra.png</imagem></signo>
+  <signo><dataInicio>23/10</dataInicio><dataFim>21/11</dataFim><signoNome>Escorpião</signoNome><descricao>Intenso, determinado e misterioso.</descricao><imagem>escorpiao.png</imagem></signo>
+  <signo><dataInicio>22/11</dataInicio><dataFim>21/12</dataFim><signoNome>Sagitário</signoNome><descricao>Aventureiro, otimista e franco.</descricao><imagem>sagitario.png</imagem></signo>
+  <signo><dataInicio>22/12</dataInicio><dataFim>19/01</dataFim><signoNome>Capricórnio</signoNome><descricao>Disciplinado, responsável e ambicioso.</descricao><imagem>capricornio.png</imagem></signo>
+  <signo><dataInicio>20/01</dataInicio><dataFim>18/02</dataFim><signoNome>Aquário</signoNome><descricao>Original, independente e idealista.</descricao><imagem>aquario.png</imagem></signo>
+  <signo><dataInicio>19/02</dataInicio><dataFim>20/03</dataFim><signoNome>Peixes</signoNome><descricao>Sonhador, sensível e compassivo.</descricao><imagem>peixes.png</imagem></signo>
 </signos>
